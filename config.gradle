@@ -1,0 +1,52 @@
+//添加多个自定义属性，可以通过ext代码块实现
+
+ext {
+    //直接将变量命名为name，不会有输出内容
+    username = "lucius"
+
+    //正式版本/测试版本  也可以在gradle.properties进行配置
+    //false:组件化模式（子模块可以独立运行），true：集成化模式（打包整个项目apk，子模块不可独立运行）
+    isRelease = false
+
+    //建立Map存储，对象名，Key都可以自定义，groovy糖果语言
+    androidId = [
+
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.2",
+            applicationId    : "com.example.aptrouter",
+            minSdkVersion    : 24,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    appId = [
+
+            "applicationId": "com.example.aptrouter",
+            "library": "com.android.library",
+            "order":"com.example.moduler.order",
+            "personal":"com.example.moduler.personal"
+
+
+
+    ]
+
+    //正式版本，测试版本呢url
+    url = [
+
+            "debug": "",
+            "release": ""
+    ]
+
+    supportLibrary="1.1.0"
+
+    //第三方库
+    dependencies=[
+
+            "appcompat":"androidx.appcompat:appcompat:${supportLibrary}",
+            //这里constaraintLayout
+            "constraintlayout":"androidx.constraintlayout:constraintlayout:1.1.3",
+
+    ]
+
+}

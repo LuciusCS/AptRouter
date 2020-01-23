@@ -1,2 +1,2 @@
-include ':app'
-rootProject.name='AptRouter1'
+include ':app', ':library', ':order', ':personal', ':common', ':annotation', ':compiler'
+rootProject.name='AptRouter'

@@ -1,29 +1,234 @@
 apply plugin: 'com.android.application'
 
+
+println "${username}"
+
+//正确规范的写法,可以讲string类型转换为int类型
+rootProject.ext.username=163
+println "${rootProject.ext.username}"
+println "${rootProject.ext.isRelease}"
+
+println ("+++++++++")
+
+//赋值与引用config.gradle
+def androidId=rootProject.ext.androidId
+def appId=rootProject.ext.appId
+def support=rootProject.ext.dependencies
+
+//用于定义打包的url
+def url=rootProject.ext.url
+
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion androidId.compileSdkVersion
+    buildToolsVersion androidId. buildToolsVersion
     defaultConfig {
-        applicationId "com.example.aptrouter1"
-        minSdkVersion 24
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        applicationId  appId.applicationId
+        minSdkVersion androidId.minSdkVersion
+        targetSdkVersion androidId.targetSdkVersion
+        versionCode androidId.versionCode
+        versionName androidId. versionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+        //用于表示开启分包
+//        multiDexEnable true
+
+        //设置分包配制，热修复中的内容有
+        //multiDexKeepFile file('multidex-config.txt')
+
+        //将svg图片生成指定维度的png图片
+//        vectorDrawables.generatedDensities('xhdpi','xxhdpi')
+
+        //使用support-v7兼容（5.0版本以上）
+        vectorDrawables.useSupportLibrary=true
+        //只保留指定和默认资源
+        resConfigs('zh-rCN')
+
+        //配置so库的CPU架构（真机arm,模拟器X86）
+        ndk{
+
+//            abiFilters('armeabi','armeabi-v7a')
+            //为了模拟器启动
+            abiFilters('x86','x86_64')
+
+        }
+
+        //源集-设置源集的属性，更改源集的Java目录或自由目录等
+        sourceSets {
+            main{
+                if(!isRelease){
+                    //如果是组件化模式，需要单独运行时
+                    manifest.srcFile 'src/main/AndroidManifest.xml'
+                    java.srcDirs=['src/main/java']
+//                    res.srcDir=['src/main/res']
+//                    resources.srcDirs=['src/main/resources']
+//                    aidl.srcDirs=['src/main/aidl']
+//                    assets.srcDirs=['src/main/assets']
+
+                }else {
+                    //集成化模式，整个项目打包
+                    manifest.srcFile 'src/main/AndroidManifest.xml'
+
+                }
+
+            }
+
+        }
+
+        //第一个参数：确定值的类型，第二个参数：指定key的名字，第三个参数：传值（必须是String）
+        //src代码中有可能需要用到跨模块交互，如果是组件化模块显然不行
+        //不能配置在android根节点，只能在defaultConfig或buildType节点下
+        buildConfigField("boolean","isRelease",String.valueOf(isRelease))
+
+        //在gradle文件中配置选项参数值（用于APT传参接收，在ARouterProcessor的参数）
+        //该配置必须卸载defaultConfig节点下
+        javaCompileOptions{
+            annotationProcessorOptions{
+                arguments=[content:'hello apt']
+            }
+
+        }
+
     }
+
+
+
+
+    //对签名打包进行配置，该配置在buildType中进行引用，必须卸载BuildType之上
+    signingConfigs{
+
+        debug{
+            //注意：路径填错了，编译不通过，但没有相应的错粗
+//            storeFile file('')
+//            storePassword "debug"
+//            keyAlias "debug"
+//            keyPassword ""
+
+        }
+
+
+
+        //这些可以在打包的过程中在图形文件中进行配置
+        release{
+
+
+            //签名证书文件
+//            storeFile file('')
+//            //签名证书类型
+//            storeType ""
+//            //签名证书文件的密码
+//            storePassword ""
+//            //签名证书中的秘钥别名
+//            keyAlias ""
+//            //签名证书文件中该秘钥的密码
+//            keyPassword ""
+//            //是否开启V2打包
+//            v2SigningEnabled true
+
+
+        }
+
+    }
+
     buildTypes {
+
+        //用于打包
+        debug{
+
+            //对构建类型设置签名信息
+            signingConfig signingConfigs.debug
+
+            buildConfigField("String","debug","\"${url.debug}\"")
+        }
+
+
+
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
+            buildConfigField("String","debug","\"${url.release}\"")
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    //AdbOptions 可以对adb操作选项添加配置
+    adbOptions{
+
+        //配置操作超市时间，单位毫秒
+        timeOutInMs=5* 1000_0
+
+        //adb install 命令选项配置
+        installOptions '-r', '-s'
+    }
+
+    //添加下面配置后，同步速度变慢
+    //对dx操作进行配置，接受一个DexOptions类型的闭包，配置由DexOptions提供，热修复内容
+    dexOptions{
+        //配置执行dx命令是为其分配的最大堆内存
+        javaMaxHeapSize "4g"
+        //配置是否预执行 dex libraries工程，开启后会提高增量构建速度，不过会影响clean构建的速度，默认为true
+        preDexLibraries=false
+
+        //配置是否开启jumbo模式，代码方法是超过65535需要强制开启才能构建成功
+        jumboMode true
+        //配置Gradle运行dx.bat命令时使用的线程数量
+        threadCount 8
+        //配置multidex参数
+        additionalParameters=[
+                '--multi-dex',  //多dex分包
+                '--set-max-idx-number=50000',  //每个分包方法数上限
+//                '--main-dex-list='+'/multidex-config.txt',  //打包到主classes.dex的文件列表
+                '--minimal-main-dex'
+
+        ]
+
+    }
+
+    //执行gradle lint即可运行lint检查，默认生成报告在outputs/lint-result.html中
+    lintOptions{
+        //遇到lint检查错误会终止构建，一般设置为false
+        abortOnError false
+        //将警告当做错误来处理（老版本：warningAsErrors）
+        warningsAsErrors false
+        //检查新API
+        check 'NewApi'
+
+    }
+
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+//    implementation 'androidx.appcompat:appcompat:1.1.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //依赖library库
+    implementation project(":library")
+
+//    implementation support.appcompat
+//    implementation support.constraintlayout
+
+    //引入依赖最简单方法，使用Lambda表达式,等价于上方implement
+    support.each{k,v->implementation v}
+    //依赖路由注解
+    implementation project(':annotation')
+    //注解处理器
+    annotationProcessor project(':compiler')
+
+
+    implementation project(':common')
+      //如果是集成化模式，做发布版本时，各个模块都不能独立运行了
+    if(isRelease){
+        implementation project(':order')
+        implementation project(':personal')
+    }
+
+
+
+
+
 }

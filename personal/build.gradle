@@ -1,0 +1,66 @@
+if (isRelease) {
+    apply plugin: 'com.android.library'
+}else {
+    apply plugin: 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //源集-设置源集的属性，更改源集的Java目录或自由目录等(配置资源路径，方便测试环境，打包不集成到正式环境)
+    sourceSets {
+        main{
+            if(!isRelease){
+                //如果是组件化模式，需要单独运行时
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java.srcDirs=['src/main/java']
+//                    res.srcDir=['src/main/res']
+//                    resources.srcDirs=['src/main/resources']
+//                    aidl.srcDirs=['src/main/aidl']
+//                    assets.srcDirs=['src/main/assets']
+
+            }else {
+                //集成化模式，整个项目打包
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+
+                java{
+
+                    //release 时 debug 目录下文件不会合并到主工程
+                    exclude '**/debug/**'
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

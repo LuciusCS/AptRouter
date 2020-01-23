@@ -1,0 +1,24 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //注册注解，并对其生成META-INF 的配置信息，不同
+    compileOnly 'com.google.auto.service:auto-service:1.0-rc4'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
+
+    //帮助我们通过类调用的方式来生成Java代码
+    implementation "com.squareup:javapoet:1.9.0"
+
+    //引入annotation，让注解处理器处理注解
+    implementation project(":annotation")
+}
+
+//Java 控制台中文乱码解决
+tasks.withType(JavaCompile){
+    options.encoding="UTF-8"
+}
+
+//JDK编译的版本是1.7
+sourceCompatibility = "7"
+targetCompatibility = "7"
