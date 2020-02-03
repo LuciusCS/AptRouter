@@ -2,6 +2,10 @@ package com.example.compiler;
 
 import com.example.annotation.ARouter;
 import com.google.auto.service.AutoService;
+import com.squareup.javapoet.ClassName;
+import com.squareup.javapoet.JavaFile;
+import com.squareup.javapoet.MethodSpec;
+import com.squareup.javapoet.TypeSpec;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -21,11 +25,16 @@ import javax.lang.model.SourceVersion;
 import javax.lang.model.element.AnnotationMirror;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.ExecutableElement;
+import javax.lang.model.element.Modifier;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 import javax.tools.Diagnostic;
 import javax.tools.JavaFileObject;
+
+
+
+
 
 //通过AutoService注解，自动生成注解处理器，用来做注册，在对应的文件夹下生成相应文件
 @AutoService(Processor.class)
@@ -113,7 +122,11 @@ public class ARouterProcessor extends AbstractProcessor {
             //最终需要生成的类文件，这里的写法参考EventBus, 如：MainActivity$$ARouter
             String finalClassName=simpleName+"$$ARouter";
 
+            /**
+             * 使用Writer的方式输出所需要的文件
+
             //createSourceFile创建源文件,创建的文件位置在packageName包下
+            //在写输出文件时，要根据需要的输出文件进行编写
             try {
                 JavaFileObject sourceFile=filer.createSourceFile(packageName+"."+finalClassName);
 
@@ -144,6 +157,39 @@ public class ARouterProcessor extends AbstractProcessor {
 
 
 
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            */
+
+            /**
+             * 使用Java Poet的方式输出所需要的文件，Java Poet的使用方式在Github上有
+             */
+
+            ARouter aRouter=element.getAnnotation(ARouter.class);
+
+            // public static Class<?> findTargetClass(String path){
+            MethodSpec methodSpec=MethodSpec.methodBuilder("findTargetClass")
+                    .addModifiers(Modifier.PUBLIC,Modifier.STATIC)
+                    .returns(Class.class)
+                    .addParameter(String.class,"path")
+                    //return path.equals("app/MainActivity") ? MainActivity.class:null;
+                    .addStatement("return path.equals($S) ? $T.class : null",
+                            aRouter.path(),
+                            ClassName.get((TypeElement)element))
+                    .build();
+
+            TypeSpec typeSpec=TypeSpec.classBuilder(finalClassName)
+                    .addModifiers(Modifier.PUBLIC,Modifier.FINAL)
+                    .addMethod(methodSpec)
+                    .build();
+
+            JavaFile javaFile= JavaFile.builder(packageName,typeSpec)
+                    .build();
+
+            try {
+                javaFile.writeTo(filer);
             } catch (IOException e) {
                 e.printStackTrace();
             }
