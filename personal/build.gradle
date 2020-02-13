@@ -17,6 +17,16 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+
+
+        //在gradle文件中配置选项参数值（用于APT传参接收，在ARouterProcessor的参数）
+        //该配置必须卸载defaultConfig节点下
+        javaCompileOptions{
+            annotationProcessorOptions{
+                arguments=[moduleName:project.name,packageNameForAPT:packageNameForAPT]
+            }
+
+        }
     }
 
     buildTypes {
@@ -63,4 +73,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //引入annotation，让注解处理器处理注解
+    implementation project(":annotation")
+    //注解处理器
+    annotationProcessor project(':compiler')
+
+    implementation project(':common')
 }

@@ -1,2 +1,2 @@
-include ':app', ':library', ':order', ':personal', ':common', ':annotation', ':compiler'
+include ':app', ':library', ':order', ':personal', ':common', ':annotation', ':compiler', ':aroute_api'
 rootProject.name='AptRouter'

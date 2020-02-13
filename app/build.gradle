@@ -81,10 +81,10 @@ android {
         buildConfigField("boolean","isRelease",String.valueOf(isRelease))
 
         //在gradle文件中配置选项参数值（用于APT传参接收，在ARouterProcessor的参数）
-        //该配置必须卸载defaultConfig节点下
+        //该配置必须卸载defaultConfig节点下  packageNameForAPT需要在config,gradle中进行定义
         javaCompileOptions{
             annotationProcessorOptions{
-                arguments=[content:'hello apt']
+                arguments=[moduleName:project.name,packageNameForAPT:packageNameForAPT]
             }
 
         }

@@ -9,6 +9,6 @@ public class Order_MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order__main);
+        setContentView(R.layout.activity_order_main);
     }
 }
