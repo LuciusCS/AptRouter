@@ -46,6 +46,9 @@ import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 import javax.tools.Diagnostic;
 
+//AutoService是固定写法，加个注解即可
+//通过autos-service中的@AutoService可以自动申城AutoService注解处理器，用来注册
+//用来生成META-INF/services/javax.annotation.processing.Processor文件
 
 //通过AutoService注解，自动生成注解处理器，用来做注册，在对应的文件夹下生成相应文件
 @AutoService(Processor.class)
