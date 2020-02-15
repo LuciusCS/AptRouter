@@ -3,6 +3,7 @@ package com.example.glidemodule.utils;
 import android.graphics.Bitmap;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -12,7 +13,14 @@ import java.util.Collection;
 public class Tool {
 
     @NonNull
-    public static <T extends Collection<Y>,Y> T checkNotEmpty(@NonNull  T collection){
+    public static void checkNotEmpty(@Nullable String string){
+        if (null==string){
+            throw new IllegalArgumentException("Must not be empty ");
+        }
+    }
+
+    @NonNull
+    public static <T extends Collection<Y>,Y> T checkNotEmpty(@Nullable T collection){
         if (collection.isEmpty()){
             throw new IllegalArgumentException("Must not be empty 传递进来的值collection："+collection+"是null");
         }

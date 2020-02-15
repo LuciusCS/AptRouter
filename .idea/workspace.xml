@@ -11,51 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0baf2cb-b39b-4ca8-9eef-83ab3c91d886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/glidemodule/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/glidemodule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/androidTest/java/com/example/glidemodule/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Key.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/ValueCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/test/java/com/example/glidemodule/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCacheCallback.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,15 +46,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/order/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="90" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glidemodule/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,15 +98,52 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-610">
-              <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+            <state relative-caret-position="300">
+              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1705#2492#0" expanded="true" />
-                <element signature="e#2491#2492#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#2536#3478#0" expanded="true" />
+                <element signature="e#3477#3478#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/bae67b0019fbb38498198fcc2d0282a340b71c5b/collection-1.1.0-sources.jar!/androidx/collection/LruCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCacheCallback.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,8 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="165">
+              <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -201,8 +189,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -219,8 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/compiler/build.gradle" />
         <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/ArouterLoadGroup.java" />
         <option value="$PROJECT_DIR$/aroute_api/build.gradle" />
         <option value="$PROJECT_DIR$/common/build.gradle" />
@@ -266,10 +252,12 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/glidemodule/build.gradle" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Key.java" />
-        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/ValueCallback.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCacheCallback.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCache.java" />
       </list>
     </option>
   </component>
@@ -857,33 +845,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/annotation/src/main/java/com/example/annotation/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/test/Arouter$$Path$$order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="36" selection-start-line="15" selection-start-column="9" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/util/Map.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/lang/reflect/Type.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1218,16 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/ValueCallback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1270,14 +1221,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java">
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-610">
-          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+        <state relative-caret-position="165">
+          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1705#2492#0" expanded="true" />
-            <element signature="e#2491#2492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCacheCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/bae67b0019fbb38498198fcc2d0282a340b71c5b/collection-1.1.0-sources.jar!/androidx/collection/LruCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#2536#3478#0" expanded="true" />
+            <element signature="e#3477#3478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
           </folding>
         </state>
       </provider>
