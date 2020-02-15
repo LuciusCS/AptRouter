@@ -5,6 +5,7 @@ import com.example.compiler.utils.EmptyUtils;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.ParameterSpec;
+import com.squareup.javapoet.TypeName;
 
 import java.lang.reflect.Type;
 
@@ -17,7 +18,10 @@ import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 import javax.tools.Diagnostic;
 
+import static com.example.compiler.utils.Constants.BASE_PACKAGE;
+import static com.example.compiler.utils.Constants.CALL;
 import static com.example.compiler.utils.Constants.PARAMETER_METHOD_NAME;
+import static com.example.compiler.utils.Constants.ROUTER_MANAGER;
 import static com.example.compiler.utils.Constants.STRING;
 
 public class ParameterFactory {
@@ -34,6 +38,9 @@ public class ParameterFactory {
     //type(类信息)工具类，包含用于操作TypeMirror的工具方法
     private Types typeUtils;
 
+    //获取元素借口信息（生成类文件需要的接口实现类）
+    private TypeMirror callMirror;
+
     //类名，如：MainActivity
     private ClassName className;
 
@@ -47,6 +54,10 @@ public class ParameterFactory {
                 .addAnnotation(Override.class)
                 .addModifiers(Modifier.PUBLIC)
                 .addParameter(builder.parameterSpec);
+
+        this.callMirror=builder.elementUtils
+                .getTypeElement(CALL)
+                .asType();
 
     }
 
@@ -98,6 +109,14 @@ public class ParameterFactory {
             //t.s=t.getIntent.getStringExtra("s");
             if (typeMirror.toString().equalsIgnoreCase(STRING)){
                 methodContent+="getStringExtra($S)";
+            }else if (typeUtils.isSubtype(typeMirror,callMirror)){   //类型工具类方法isSubtype，相当于instance一样
+                // t.iUser=(IUserImpl)RouterManager.getInstance().build("/order/getUserInfo").navigation(t);
+                methodContent="t."+fieldName+" = ($T) $T.getInstance().build($S).navigation(t)";
+
+                methodBuilder.addStatement(methodContent,
+                        TypeName.get(typeMirror),
+                        ClassName.get(BASE_PACKAGE,ROUTER_MANAGER),annotationValue);
+                return;
             }
         }
 

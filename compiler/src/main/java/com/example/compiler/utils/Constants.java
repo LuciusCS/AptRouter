@@ -20,7 +20,8 @@ public class Constants {
     public static final String STRING = "java.lang.String";
     //Activity的全类名
     public static final String ACTIVITY = "android.app.Activity";
-
+    //RouterManager类名
+    public static final String ROUTER_MANAGER = "RouterManager";
 
     //包名前缀疯转
     public static final String BASE_PACKAGE = "com.example.api";
@@ -31,7 +32,8 @@ public class Constants {
 
     //获取参数，加载接口
     public static final String PARAMETER_LOAD = BASE_PACKAGE + ".core.ParameterLoad";
-
+    //跨业务模块，回调接口
+    public static final String CALL = BASE_PACKAGE+".core.Call";
     //路由组Group对应的详细Path,方法名
     public static final String PATH_METHOD_NAME = "loadPath";
     //路由组Group对应的详细Path,参数名

@@ -153,6 +153,10 @@ public class RouterManager {
                             }
 
                             break;
+
+                        case CALL:
+                            //返回接口实现类
+                            return routerBean.getClazz().newInstance();
                     }
                 }
             }

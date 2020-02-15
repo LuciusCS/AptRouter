@@ -163,9 +163,11 @@ public class ARouterProcessor extends AbstractProcessor {
 
         //通过Element工具类，获取Activity类型
         TypeElement activityType = elementUtils.getTypeElement(Constants.ACTIVITY);
+        TypeElement callType = elementUtils.getTypeElement(Constants.CALL);
 
         //显示类信息
         TypeMirror acitivityMirror = activityType.asType();
+        TypeMirror callMirror = callType.asType();
 
         for (Element element : elements) {
             //获取每个元素的类信息
@@ -184,8 +186,9 @@ public class ARouterProcessor extends AbstractProcessor {
 
             //告诫判断 @ARouter注解只能作用域类智商，并且是规定的Activity
             if (typeUtils.isSubtype(elementMirror, acitivityMirror)) {
-
                 routerBean.setType(RouterBean.Type.ACTIVITY);
+            } else if (typeUtils.isSubtype(elementMirror, callMirror)){
+                routerBean.setType(RouterBean.Type.CALL);
             } else {
                 throw new RuntimeException("@ARouter注解目前仅限用于Activity");
             }
