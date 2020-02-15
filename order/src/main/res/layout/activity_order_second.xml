@@ -3,12 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Order module Second"
+        android:textSize="26sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转 首页"
+        android:onClick="jumpApp"
+        android:textSize="26sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="跳转Personal Second"
+        android:onClick="jumpPersonl"
         android:textSize="26sp"
         />
 

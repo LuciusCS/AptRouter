@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="跳转到PersonalSecondActivity"
         android:textSize="20sp"
-        android:onClick="jump"
+        android:onClick="jumpPersonal"
        />
 
     <TextView

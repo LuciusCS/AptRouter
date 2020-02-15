@@ -11,18 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0baf2cb-b39b-4ca8-9eef-83ab3c91d886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/annotation/src/main/java/com/example/annotation/Parameter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/Main2Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/Main3Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/XActivity$Parameter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/core/ParameterLoad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/ParameterProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/factory/ParameterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/BundleManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/ParameterManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/RouterManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
@@ -33,15 +26,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotation/build/.transforms/0c4e152622501c499a1b5ad6d8d2d528/annotation/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/annotation/build/.transforms/0c4e152622501c499a1b5ad6d8d2d528/annotation/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotation/build/.transforms/e3d15a46b5d180ec0c15cd84801ed0c6/annotation/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/annotation/build/.transforms/e3d15a46b5d180ec0c15cd84801ed0c6/annotation/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotation/build/libs/annotation.jar" beforeDir="false" afterPath="$PROJECT_DIR$/annotation/build/libs/annotation.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/ARouterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/ARouterProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/MyClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/java/com/example/moduler/order/OrderSecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/example/moduler/order/OrderSecondActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/res/layout/activity_order_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/res/layout/activity_order_second.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal/src/main/java/com/example/modular/personal/PersonalSecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/personal/src/main/java/com/example/modular/personal/PersonalSecondActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal/src/main/res/layout/activity_personal_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/personal/src/main/res/layout/activity_personal_second.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +66,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+            <state relative-caret-position="465">
+              <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="android-manifest" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personal/src/main/java/com/example/modular/personal/PersonalSecondActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,25 +108,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/order/src/main/java/com/example/moduler/order/OrderSecondActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+            <state relative-caret-position="345">
+              <caret line="24" selection-start-line="24" selection-end-line="26" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order/src/main/res/layout/activity_order_second.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/RouterManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="143" column="77" lean-forward="true" selection-start-line="143" selection-start-column="77" selection-end-line="143" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personal/src/main/res/layout/activity_personal_second.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="21" selection-end-column="10" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -150,17 +195,13 @@
         <option value="$PROJECT_DIR$/annotation/src/main/java/com/example/annotation/model/RouterBean.java" />
         <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/ARouterLoadPath.java" />
         <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/core/ARouterLoadPath.java" />
-        <option value="$PROJECT_DIR$/order/src/main/res/layout/activity_order_second.xml" />
-        <option value="$PROJECT_DIR$/personal/src/main/res/layout/activity_personal_second.xml" />
         <option value="$PROJECT_DIR$/order/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/personal/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/personal/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/config.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/example/common/base/BaseApplication.java" />
         <option value="$PROJECT_DIR$/order/build.gradle" />
-        <option value="$PROJECT_DIR$/personal/src/main/java/com/example/modular/personal/PersonalSecondActivity.java" />
         <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/core/ParameterLoad.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/XActivity$Parameter.java" />
         <option value="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/ARouterProcessor.java" />
@@ -173,9 +214,17 @@
         <option value="$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/aptrouter/Main2Activity$$Parameter.java" />
         <option value="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/utils/Constants.java" />
         <option value="$PROJECT_DIR$/compiler/src/main/java/com/example/compiler/factory/ParameterFactory.java" />
+        <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/ParameterManager.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/example/moduler/BundleManager.java" />
+        <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/BundleManager.java" />
+        <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/RouterManager.java" />
+        <option value="$PROJECT_DIR$/personal/src/main/res/layout/activity_personal_second.xml" />
+        <option value="$PROJECT_DIR$/order/src/main/res/layout/activity_order_second.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/order/src/main/java/com/example/moduler/order/OrderSecondActivity.java" />
+        <option value="$PROJECT_DIR$/personal/src/main/java/com/example/modular/personal/PersonalSecondActivity.java" />
       </list>
     </option>
   </component>
@@ -269,7 +318,7 @@
               <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
               <item name="aroute_api" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="core" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="api" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
@@ -372,7 +421,14 @@
               <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
               <item name="personal" type="feadf853:AndroidModuleNode" />
               <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="apt" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="example" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="personal" type="feadf853:AndroidModuleNode" />
+              <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="example" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="apt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
@@ -480,6 +536,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.api" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.aptrouter" />
     </key>
@@ -742,9 +801,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1375" height="904" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18585403" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.29721594" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -753,7 +813,7 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.24066924" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.32818532" />
+      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.08494209" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32901832" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32901832" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
@@ -813,48 +873,19 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/RouterManager.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/src/core-api/org/gradle/api/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="414" column="12" selection-start-line="414" selection-start-column="12" selection-end-line="414" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/aptrouter/apt/ARouter$$Path$$app.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/aptrouter/apt/ARouter$$Group$$app.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personal/src/main/res/layout/activity_personal_second.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/example/common/base/BaseApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -990,16 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personal/src/main/java/com/example/modular/personal/PersonalSecondActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/personal/build/generated/ap_generated_sources/debug/out/com/example/aptrouter/apt/ARouter$$Group$$personal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1045,13 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/core/ParameterLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1170,30 +1184,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order/src/main/res/layout/activity_order_second.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/order/src/main/res/layout/activity_order_main.xml">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/core/ParameterManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/core/ParameterLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/ParameterManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/BundleManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/RouterManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="143" column="77" lean-forward="true" selection-start-line="143" selection-start-column="77" selection-end-line="143" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personal/src/main/res/layout/activity_personal_second.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/res/layout/activity_order_second.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="240">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+        <state relative-caret-position="465">
+          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1202,11 +1272,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/order/src/main/java/com/example/moduler/order/OrderSecondActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+        <state relative-caret-position="345">
+          <caret line="24" selection-start-line="24" selection-end-line="26" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personal/src/main/java/com/example/modular/personal/PersonalSecondActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="android-manifest" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
         </state>
       </provider>
     </entry>

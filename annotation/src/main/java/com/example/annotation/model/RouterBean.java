@@ -11,7 +11,10 @@ public class RouterBean {
 
 
     public enum Type{
-        ACTIVITY
+        //扩展
+        ACTIVITY,
+        //用于跨模块的业务接口
+        CALL
     }
 
     //枚举的类型
