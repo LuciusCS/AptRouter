@@ -1,6 +1,8 @@
 package com.example.glidemodule.utils;
 
 import android.graphics.Bitmap;
+import android.os.Looper;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,6 +13,29 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Collection;
 
 public class Tool {
+
+    public static void assertMainThread(){
+        if (!isOnMainThread())
+        {
+            throw new IllegalArgumentException("You must call this method on the main thread");
+        }
+    }
+
+
+    public static void assertBackgroundThread(){
+        if (isOnBackgroundThread()){
+            throw new IllegalArgumentException("You must call this method on a background thread");
+        }
+    }
+
+    public static boolean isOnMainThread(){
+        return Looper.myLooper()==Looper.getMainLooper();
+    }
+
+    public static boolean isOnBackgroundThread(){
+        return !isOnMainThread();
+    }
+
 
     @NonNull
     public static void checkNotEmpty(@Nullable String string){
@@ -73,6 +98,12 @@ public class Tool {
 
         return stringBuffer.toString();
 
+    }
+
+    public static void checkNotEmpty(ImageView imageView){
+        if (imageView==null){
+            throw new IllegalArgumentException("Must not be empty 传进来的imageView："+imageView+"是null");
+        }
     }
 
 

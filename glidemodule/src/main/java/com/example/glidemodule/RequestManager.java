@@ -118,10 +118,14 @@ public class RequestManager {
      * @param s
      * @return
      */
-    public RequestTargetEngine load(String s) {
+    public RequestTargetEngine load(String path) {
 
         //移除handler
         mHandler.removeMessages(NEXT_HANDLER_MSG);
+
+        //把值传递给资源加载引擎
+        requestTargetEngine.loadValueInitAction(path,requestManagerContext);
+
         return requestTargetEngine;
     }
 }

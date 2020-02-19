@@ -62,8 +62,8 @@ public class Value {
      * count--<=0 ，不再使用了
      */
     public void nonUseAction(){
-
-        if (count--<=0){
+        count--;
+        if (count<=0){
             //回调给外界，，告诉不在使用了
             valueCallback.valueNonUseAction(key,this);
 
