@@ -27,17 +27,17 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
 
     @Override
     public void glideInitAction() {
-        Log.d(TAG,"glideInitAction：Glide生命周期 已经开启 初始化");
+        Log.e(TAG,"glideInitAction：Glide生命周期 已经开启 初始化");
     }
 
     @Override
     public void glideStopAction() {
-        Log.d(TAG,"glideStopAction：Glide生命周期 已经停止");
+        Log.e(TAG,"glideStopAction：Glide生命周期 已经停止");
     }
 
     @Override
     public void glideRecycleAction() {
-        Log.d(TAG,"glideRecycleAction：Glide生命周期 进行释放操作 ");
+        Log.e(TAG,"glideRecycleAction：Glide生命周期 进行释放操作 ");
         if (activeCache!=null){
             activeCache.closeThread();  //把活动缓存给释放掉
         }
@@ -107,7 +107,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
         //TODO 第一步 判断活动缓存是否有资源，如果有资源则 返回，否则继续往下找
         Value value=activeCache.get(key);
         if (null!=value){
-            Log.d(TAG,"cacheAction: 本次加载是在活动缓存中共获取的资源》》");
+            Log.e(TAG,"cacheAction: 本次加载是在活动缓存中共获取的资源》》");
 
             //返回 代表使用了 一次 Value
             value.useAction();
@@ -120,7 +120,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
             //移动操作
             memoryCache.manualRemove(key); //移除内存缓存
             activeCache.put(key,value);     //把内存缓存中的元素，加入到活动缓存中
-            Log.d(TAG,"cache Action：本次加载是在(内存缓存)中获取的资源>>>");
+            Log.e(TAG,"cache Action：本次加载是在(内存缓存)中获取的资源>>>");
 
             //返回，代表使用了一次 Value
             value.useAction(); //使用了一次 加一
@@ -135,7 +135,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
 
             //把磁盘缓存中的元素　--> 加入到内存缓存中
 //            memoryCache.put(key,value);
-            Log.d(TAG,"cache Action：本次加载是在(磁盘缓存)中获取的资源>>>");
+            Log.e(TAG,"cache Action：本次加载是在(磁盘缓存)中获取的资源>>>");
             value.useAction(); //使用了一次 加一
             return value;
         }
@@ -175,6 +175,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
     public void entryRemoveMemoryCache(String key, @NonNull Value oldValue) {
         //添加到复用池，空余功能点
 
+
     }
 
     //加载外部资源成功
@@ -191,7 +192,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
     @Override
     public void responseException(Exception e) {
 
-        Log.d(TAG,"responseException：加载外部资源失败 e: "+e.getMessage());
+        Log.e(TAG,"responseException：加载外部资源失败 e: "+e.getMessage());
     }
 
     /**
@@ -200,7 +201,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
      * @param value
      */
     private void saveCache(String key,Value value){
-        Log.d(TAG,"加载外部资源后，保存到缓存中 key:"+key+"  value:"+value);
+        Log.e(TAG,"加载外部资源后，保存到缓存中 key:"+key+"  value:"+value);
         value.setKey(key);
         if (diskLruCache!=null){
             diskLruCache.put(key,value);  //保存到磁盘缓存中

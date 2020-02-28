@@ -49,7 +49,7 @@ public class Value {
         Tool.checkNotEmpty(bitmap);
 
         if (bitmap.isRecycled()){   //已经被回收
-            Log.d(TAG,"UseAction:加一 count："+count);
+            Log.e(TAG,"UseAction:加一 count："+count);
 
             return;
         }
@@ -76,12 +76,12 @@ public class Value {
      */
     public void recycleBitma(){
         if (count>0){
-            Log.d(TAG,"recycleBitmap: 引用计数大于0，证明还在使用，不能释放");
+            Log.e(TAG,"recycleBitmap: 引用计数大于0，证明还在使用，不能释放");
             return;
         }
 
         if (bitmap.isRecycled()){   //被回收了
-            Log.d(TAG,"Bitmap被回收了");
+            Log.e(TAG,"Bitmap被回收了");
             return;
 
         }

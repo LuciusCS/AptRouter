@@ -7,12 +7,15 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView1,imageView2,imageView3;
+
+    String TAG=MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         imageView2=findViewById(R.id.image2);
         imageView3=findViewById(R.id.image3);
         verifyStoragePermissions(this);
+        Log.e(TAG,"+++++++++++++++++++++++++++++");
     }
 
     public void t1(View view) {

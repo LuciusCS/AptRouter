@@ -62,7 +62,7 @@ public class RequestManager {
 
         }
         Fragment fragment2 = supportFragmentManager.findFragmentByTag(FRAGMENT_ACTIVITY_NAME);   //如果不添加 fragmenr2 为null ,还在排队中，没有被消费
-        Log.d(TAG, "RequestManager: fragment2:" + fragment2);
+        Log.e(TAG, "RequestManager: fragment2:" + fragment2);
 
         //发送一次Handler
         mHandler.sendEmptyMessage(NEXT_HANDLER_MSG);
@@ -98,7 +98,7 @@ public class RequestManager {
         @Override
         public boolean handleMessage(@NonNull Message msg) {
             Fragment fragment2 = fragmentActivity.getSupportFragmentManager().findFragmentByTag(FRAGMENT_ACTIVITY_NAME);   //fragmenr2 不为null ,不在排队中，被消费
-            Log.d(TAG, "Handler: fragment2:" + fragment2);
+            Log.e(TAG, "Handler: fragment2:" + fragment2);
 
             return false;
         }

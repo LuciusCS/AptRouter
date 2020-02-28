@@ -104,7 +104,25 @@ public class DiskLruCacheImpl {
             if (null!=snapshot){
                 Value value=Value.getInstance();
                 inputStream=snapshot.getInputStream(0);  //index不嗯给你大于VALUE_COUNT;
-                Bitmap bitmap= BitmapFactory.decodeStream(inputStream);
+
+
+                BitmapFactory.Options options = new BitmapFactory.Options();
+                options.inJustDecodeBounds = true;  //图片的周围信息，内置会只获取图片的一部分，值获取
+                BitmapFactory.decodeStream(inputStream, null, options);  //option在此会获取到相应的值
+                int w = options.outWidth;
+                int h = options.outHeight;
+
+                //使用复用池，拿去图片内存
+                BitmapFactory.Options options2 = new BitmapFactory.Options();
+                //既然是外部网络加载图片，就不要用复用池
+//                Bitmap bitmapPoolResult=bitmapPoolResult=
+                options2.inMutable=true;
+                options2.inPreferredConfig=Bitmap.Config.RGB_565;
+                options2.inJustDecodeBounds=false;
+                //inSampleSize是采样率，当inSampleSize为2时，一个2000 1000的图片，将被缩小至 1000 500
+//                options2.inSampleSize= Tool.sa
+                final Bitmap bitmap = BitmapFactory.decodeStream(inputStream,null,options2);
+
                 value.setBitmap(bitmap);
                 //保存key唯一标识
                 value.setKey(key);

@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BookmarkManager">
@@ -14,12 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0baf2cb-b39b-4ca8-9eef-83ab3c91d886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/ILoadData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/ResponseListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/pool/BitmapPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/pool/BitmapPoolImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -27,17 +25,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_0_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glidemodule/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestTargetEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestTargetEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCacheImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCacheImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glidemodule/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/glidemodule/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +43,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="FBD4T18131002095" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_XL_API_29" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -71,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestTargetEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2775">
-              <caret line="205" selection-start-line="205" selection-end-line="205" />
+            <state relative-caret-position="165">
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1011#1012#0" expanded="true" />
@@ -85,10 +80,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManager.java">
+        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="136">
+              <caret line="76" selection-start-line="76" selection-end-line="80" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,88 +92,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCacheImpl.java">
+        <entry file="file://$USER_HOME$/Android/Sdk/sources/android-29/android/app/ActivityThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Android/Sdk/sources/android-29/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="112" column="19" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="2802">
+              <caret line="2013" column="40" selection-start-line="2013" selection-start-column="21" selection-end-line="2013" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -199,6 +116,7 @@
       <find>分包</find>
       <find>临时</find>
       <find>valueof</find>
+      <find>EXECUTE_TRANSACTION</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,10 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main3.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/Main2Activity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/aptrouter/Main3Activity.java" />
-        <option value="$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/aptrouter/Main2Activity$$Parameter.java" />
         <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/ParameterManager.java" />
         <option value="$PROJECT_DIR$/order/src/main/java/com/example/moduler/BundleManager.java" />
         <option value="$PROJECT_DIR$/aroute_api/src/main/java/com/example/api/BundleManager.java" />
@@ -236,7 +150,6 @@
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCacheCallback.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCache.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCache.java" />
-        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCacheImpl.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/File" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/GlideBuilder.java" />
@@ -247,17 +160,22 @@
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/FragementActivityFragmentManager.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/ActivityFragmentManager.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/FragmentActivityFragmentManager.java" />
-        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManager.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/ILoadData.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/ResponseListener.java" />
-        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java" />
-        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java" />
-        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/MainActivity.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManager.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/pool/BItmapPoolImpl.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/pool/BitmapPool.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/pool/BitmapPoolImpl.java" />
         <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestTargetEngine.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java" />
+        <option value="$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCacheImpl.java" />
       </list>
     </option>
   </component>
@@ -364,6 +282,68 @@
           <expand>
             <path>
               <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="glidemodule" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="glidemodule" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="glidemodule" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="disk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="glidemodule" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="load_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="glidemodule" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="pool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="glidemodule" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
+              <item name="glidemodule" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="glidemodule" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AptRouter" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -375,8 +355,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_XL_API_29" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-02-18T12:23:29.095Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="FBD4T18131002095" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-02-19T03:01:45.922Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -409,7 +389,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager" selected="Android App.glidemodule">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -711,13 +691,13 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.5148005" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.5808879" visible="true" weight="0.80823684" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.65894467" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.5808879" weight="0.7284427" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32901832" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32818532" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5026336" side_tool="true" weight="0.52509654" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49962378" weight="0.6885457" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49962378" weight="0.35392535" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49736643" weight="0.4165554" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4054054" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32901832" />
@@ -778,7 +758,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestTargetEngine.java</url>
-          <line>205</line>
+          <line>206</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
@@ -792,18 +772,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/personal/src/main/java/com/example/modular/personal/PersonalSecondActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glide_module/src/main/java/com/example/glide_module/MainActivity.java" />
-    <entry file="file://$PROJECT_DIR$/glide_module/src/main/res/layout/activity_main.xml" />
     <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/aptrouter/MainActivity$$Parameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -876,13 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="224" column="14" selection-start-line="224" selection-start-column="14" selection-end-line="224" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -890,20 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="90" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/ValueCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -918,37 +865,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#2202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/StrictLineReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#7148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/bae67b0019fbb38498198fcc2d0282a340b71c5b/collection-1.1.0-sources.jar!/androidx/collection/LruCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="199" column="29" selection-start-line="199" selection-start-column="29" selection-end-line="199" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -959,148 +879,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCacheCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/lifecycleCallback.java" />
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-29/java/util/logging/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3265">
           <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManagerRetriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="99" selection-start-line="26" selection-start-column="99" selection-end-line="26" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/ResponseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/GlideBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/FragmentActivityFragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/ActivityFragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/LifecycleCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/Glide.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/ILoadData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="95" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Key.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="76" />
-          <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,44 +902,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestTargetEngine.java">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2775">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="337">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManager.java">
+    <entry file="file://$PROJECT_DIR$/glidemodule/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-29/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
+        <state relative-caret-position="559">
           <caret line="112" column="19" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1176,16 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1194,23 +947,260 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java">
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+        <state relative-caret-position="2175">
+          <caret line="199" column="29" selection-start-line="199" selection-start-column="29" selection-end-line="199" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCacheImpl.java">
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/StrictLineReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="360">
+          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#7148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#2202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCacheCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/ActivityFragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/FragmentActivityFragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/fragment/LifecycleCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/ILoadData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="95" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="92" column="29" lean-forward="true" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestManagerRetriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/ResponseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/resources/ValueCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/utils/Tool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="26" column="99" selection-start-line="26" selection-start-column="99" selection-end-line="26" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/Glide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/GlideBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/pool/BitmapPoolImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="107" column="7" lean-forward="true" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/pool/BitmapPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/ActiveCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/MemoryCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/RequestTargetEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/cache/disk/DiskLruCacheImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glidemodule/src/main/java/com/example/glidemodule/load_data/LoadDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="76" selection-start-line="76" selection-end-line="80" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-29/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2802">
+          <caret line="2013" column="40" selection-start-line="2013" selection-start-column="21" selection-end-line="2013" selection-end-column="40" />
         </state>
       </provider>
     </entry>
