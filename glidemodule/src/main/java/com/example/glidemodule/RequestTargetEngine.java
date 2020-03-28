@@ -13,6 +13,8 @@ import com.example.glidemodule.cache.disk.DiskLruCacheImpl;
 import com.example.glidemodule.fragment.LifecycleCallback;
 import com.example.glidemodule.load_data.LoadDataManager;
 import com.example.glidemodule.load_data.ResponseListener;
+import com.example.glidemodule.pool.BitmapPool;
+import com.example.glidemodule.pool.BitmapPoolImpl;
 import com.example.glidemodule.resources.Key;
 import com.example.glidemodule.resources.Value;
 import com.example.glidemodule.resources.ValueCallback;
@@ -52,6 +54,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
     private DiskLruCacheImpl diskLruCache;
 
     //复用池 未写
+    private BitmapPool bitmapPool;
 
     private final int MEMARY_MAX_SIZE=1024*1024*60;
 
@@ -66,6 +69,9 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
 
         //初始化磁盘缓存
        diskLruCache=new DiskLruCacheImpl();
+        if (bitmapPool==null){
+            bitmapPool=new BitmapPoolImpl(MEMARY_MAX_SIZE);
+        }
 
     }
 
@@ -128,7 +134,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
         }
 
         //TODO 第三步，从磁盘缓存中去找，如果找到了，把磁盘缓存中的元素加入到活动缓存中
-        value=diskLruCache.get(key);
+        value=diskLruCache.get(key,bitmapPool);
         if (null!=value){
             //把磁盘缓存中的元素 --》 加入到活动缓存中
             activeCache.put(key,value);
@@ -174,7 +180,7 @@ public class RequestTargetEngine implements LifecycleCallback , ValueCallback , 
     @Override
     public void entryRemoveMemoryCache(String key, @NonNull Value oldValue) {
         //添加到复用池，空余功能点
-
+        bitmapPool.put(oldValue.getBitmap());
 
     }
 

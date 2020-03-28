@@ -1,5 +1,7 @@
 package com.example.glidemodule.cache;
 
+import android.graphics.Bitmap;
+
 import com.example.glidemodule.resources.Value;
 import com.example.glidemodule.resources.ValueCallback;
 import com.example.glidemodule.utils.Tool;
@@ -19,6 +21,8 @@ public class ActiveCache {
 
     //容器
     private Map<String, WeakReference<Value>>mapList=new HashMap<>();
+
+    private Map<String, Bitmap>mapValueList=new HashMap<>();
 
     private ReferenceQueue<Value>queue;    //目的：为了监听弱引用是否被回收
     private boolean isCloseThread;
@@ -48,6 +52,8 @@ public class ActiveCache {
 
         //存储 --》 容器
         mapList.put(key,new CustomWeakReference(value,getQueue(),key));
+
+        mapValueList.put(key,value.getBitmap());
     }
 
 
@@ -59,7 +65,10 @@ public class ActiveCache {
     public Value get(String key){
         WeakReference<Value>valueWeakReference=mapList.get(key);
         if (null!=valueWeakReference){
-            return valueWeakReference.get();   //返回value
+            Value value=valueWeakReference.get();   //返回value
+            value.setBitmap(mapValueList.get(key));
+            value.setKey(key);
+            return value;   //返回value
         }
         return null;
     }
@@ -85,10 +94,16 @@ public class ActiveCache {
     public class CustomWeakReference extends WeakReference< Value>{
 
         private String key;
+        private Value value;
 
         public CustomWeakReference(Value referent, ReferenceQueue<? super Value> q,String key) {
             super(referent, q);
             this.key=key;
+            this.value=referent;
+        }
+
+        public Value getValue() {
+            return value;
         }
     }
 
@@ -119,7 +134,6 @@ public class ActiveCache {
      * 为了监听弱引用回收,被动移除的
      * @return
      */
-
     private ReferenceQueue<Value>getQueue(){
 
         if (queue==null){
@@ -133,7 +147,7 @@ public class ActiveCache {
 
                         try {
 
-                            if (isAutoRemove) {
+                            if (!isAutoRemove) {
                                 //阻塞式方法
                                 Reference<? extends Value> remove = queue.remove();  //如果被回收，则会执行该方法
 
@@ -142,6 +156,7 @@ public class ActiveCache {
                                 //移除容器  //isAutoRemove 区分手动移除还是被动移除
                                 if (mapList != null && !mapList.isEmpty()) {
                                     mapList.remove(weakReference.key);
+                                    mapValueList.remove(weakReference.key);
                                 }
                             }
 

@@ -36,13 +36,20 @@ public class BitmapPoolImpl extends LruCache<Integer,Bitmap> implements BitmapPo
         //todo 条件一 bitmap.isMutable()==true;
         if (!bitmap.isMutable())
         {
+            if (bitmap.isRecycled()==false){
+                bitmap.recycle();
+            }
+
             Log.e(TAG,"put: 条件一 bitmap.isMutable==true 不满足，不能存入复用池");
             return;
         }
 
-        //todo 条件二 就计算bitmap的大小
+        //todo 条件二 就计算bitmap的大小,
         int bitmapSize = getBitmapSize(bitmap);
-        if (bitmapSize>=maxSize()){
+        if (bitmapSize>maxSize()){
+            if (bitmap.isRecycled()==false){
+                bitmap.recycle();
+            }
             Log.e(TAG,"put： 条件二 大于maxSize 不满足，不能存入复用池");
             return;
         }
@@ -131,5 +138,6 @@ public class BitmapPoolImpl extends LruCache<Integer,Bitmap> implements BitmapPo
     @Override
     protected void entryRemoved(boolean evicted, @NonNull Integer key, @NonNull Bitmap oldValue, @Nullable Bitmap newValue) {
         super.entryRemoved(evicted, key, oldValue, newValue);
+        //吧TreeMap里面的给移除
     }
 }

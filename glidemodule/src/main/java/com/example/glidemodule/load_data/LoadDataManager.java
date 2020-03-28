@@ -8,8 +8,9 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
+import com.example.glidemodule.Tool;
 import com.example.glidemodule.resources.Value;
-import com.example.glidemodule.utils.Tool;
+
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -79,6 +80,8 @@ public class LoadDataManager implements ILoadData, Runnable {
 //                BitmapFactory.decodeStream(inputStream, null, options);  //option在此会获取到相应的值
 //                int w = options.outWidth;
 //                int h = options.outHeight;
+                int w=1920;
+                int h=1080;
 
                 //使用复用池，拿去图片内存
                 BitmapFactory.Options options2 = new BitmapFactory.Options();
@@ -88,7 +91,7 @@ public class LoadDataManager implements ILoadData, Runnable {
                 options2.inPreferredConfig=Bitmap.Config.RGB_565;
                 options2.inJustDecodeBounds=false;
                 //inSampleSize是采样率，当inSampleSize为2时，一个2000 1000的图片，将被缩小至 1000 500
-//                options2.inSampleSize= Tool.sa
+                options2.inSampleSize= Tool.sampleBitmapSize(options2,w,h);
                 final Bitmap bitmap = BitmapFactory.decodeStream(inputStream,null,options2);
 
                 //切换主线程

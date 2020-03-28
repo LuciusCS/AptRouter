@@ -4,8 +4,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
 
+import com.example.glidemodule.Tool;
+import com.example.glidemodule.pool.BitmapPool;
 import com.example.glidemodule.resources.Value;
-import com.example.glidemodule.utils.Tool;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -90,7 +92,7 @@ public class DiskLruCacheImpl {
     }
 
     //TODO get
-    public Value get(String key){
+    public Value get(String key, BitmapPool bitmapPool){
 
         Tool.checkNotEmpty(key);
 
@@ -106,21 +108,24 @@ public class DiskLruCacheImpl {
                 inputStream=snapshot.getInputStream(0);  //index不嗯给你大于VALUE_COUNT;
 
 
+                /*
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inJustDecodeBounds = true;  //图片的周围信息，内置会只获取图片的一部分，值获取
                 BitmapFactory.decodeStream(inputStream, null, options);  //option在此会获取到相应的值
                 int w = options.outWidth;
                 int h = options.outHeight;
-
+                */
+                int w=1092;
+                int h=1080;
                 //使用复用池，拿去图片内存
                 BitmapFactory.Options options2 = new BitmapFactory.Options();
                 //既然是外部网络加载图片，就不要用复用池
-//                Bitmap bitmapPoolResult=bitmapPoolResult=
+                Bitmap bitmapPoolResult=bitmapPool.get(w,h, Bitmap.Config.RGB_565);
                 options2.inMutable=true;
                 options2.inPreferredConfig=Bitmap.Config.RGB_565;
                 options2.inJustDecodeBounds=false;
                 //inSampleSize是采样率，当inSampleSize为2时，一个2000 1000的图片，将被缩小至 1000 500
-//                options2.inSampleSize= Tool.sa
+                options2.inSampleSize= Tool.sampleBitmapSize(options2,w,h);
                 final Bitmap bitmap = BitmapFactory.decodeStream(inputStream,null,options2);
 
                 value.setBitmap(bitmap);

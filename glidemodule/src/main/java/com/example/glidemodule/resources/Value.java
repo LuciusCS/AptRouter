@@ -12,6 +12,7 @@ public class Value {
 
     private final String TAG=Value.class.getSimpleName();
 
+    private Value(){}
 
     //使用单利模式
     private static Value value;
