@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/aroute_api/aroute_api.iml" filepath="$PROJECT_DIR$/aroute_api/aroute_api.iml" group="AptRouter/aroute_api" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" group="AptRouter/common" />
       <module fileurl="file://$PROJECT_DIR$/compiler/compiler.iml" filepath="$PROJECT_DIR$/compiler/compiler.iml" group="AptRouter/compiler" />
+      <module fileurl="file://$PROJECT_DIR$/glidemodule/glidemodule.iml" filepath="$PROJECT_DIR$/glidemodule/glidemodule.iml" group="AptRouter/glidemodule" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" group="AptRouter/library" />
       <module fileurl="file://$PROJECT_DIR$/order/order.iml" filepath="$PROJECT_DIR$/order/order.iml" group="AptRouter/order" />
       <module fileurl="file://$PROJECT_DIR$/personal/personal.iml" filepath="$PROJECT_DIR$/personal/personal.iml" group="AptRouter/personal" />

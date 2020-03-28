@@ -49,7 +49,7 @@ android {
 
 //            abiFilters('armeabi','armeabi-v7a')
             //为了模拟器启动
-            abiFilters('x86','x86_64')
+            abiFilters('armeabi','x86','x86_64')
 
         }
 
