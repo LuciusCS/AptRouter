@@ -30,7 +30,7 @@ public class ActiveCache {
     private Thread thread;
 
     //用于判断是主动还是被动移除
-    private boolean isAutoRemove=true;
+    private boolean isAutoRemove;
 
     private ValueCallback valueCallback;
 

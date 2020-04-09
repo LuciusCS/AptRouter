@@ -121,6 +121,7 @@ public class DiskLruCacheImpl {
                 BitmapFactory.Options options2 = new BitmapFactory.Options();
                 //既然是外部网络加载图片，就不要用复用池
                 Bitmap bitmapPoolResult=bitmapPool.get(w,h, Bitmap.Config.RGB_565);
+                options2.inBitmap = bitmapPoolResult;
                 options2.inMutable=true;
                 options2.inPreferredConfig=Bitmap.Config.RGB_565;
                 options2.inJustDecodeBounds=false;
